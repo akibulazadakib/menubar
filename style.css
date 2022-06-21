@@ -1,0 +1,46 @@
+*{
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+}
+nav{
+    background-color: gray;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    color: rgb(15, 252, 46);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: sans-serif;
+    background-color: gray;
+    transition: .4s linear;
+}
+nav ul li:hover > a{
+    background-color: rgb(17, 181, 231);
+    color: red;
+}
+nav ul li ul{
+    position: absolute;
+    right: 6px;
+    top: 250%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s linear;
+}
+nav ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+nav ul li ul li ul{
+    left: 65%;
+    top: o !important;
+}
